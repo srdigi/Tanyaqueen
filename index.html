@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tanya Queen Analyst | Official</title>
+<title>Tanya Queen Analyst | Cricket Insights</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<meta name="description" content="Tanya Queen Analyst – Cricket analysis & match insights. Join free Telegram channel for IPL 2025 updates.">
+<meta name="description" content="Tanya Queen Analyst – Expert cricket match analysis & IPL insights. Join free Telegram channel for match updates.">
 <meta name="robots" content="index, follow">
 
 <style>
@@ -21,15 +21,15 @@ html,body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* FULL SCREEN BACKGROUND MODEL IMAGE */
+/* FULL SCREEN CRICKET + MODEL BACKGROUND */
 body{
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
-    url("https://images.unsplash.com/photo-1534528741775-53994a69daeb");
+    url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  color:#fff;
+  color:#ffffff;
 }
 
 /* CENTER CONTENT – NO SCROLL */
@@ -47,8 +47,8 @@ body{
   text-align:center;
 }
 
-/* GIRL IMAGE AS LOGO */
-.logo{
+/* GIRL IMAGE AS PROFILE (NO LOGO) */
+.profile{
   width:110px;
   height:110px;
   border-radius:50%;
@@ -76,21 +76,24 @@ h1{
   font-weight:bold;
 }
 
+/* CTA BUTTON */
 .btn{
   margin:15px 0;
   padding:15px;
   background:#e53935;
   border-radius:6px;
   text-decoration:none;
-  color:#fff;
+  color:#ffffff;
   display:block;
   font-size:17px;
   font-weight:bold;
 }
 
+/* LIVE INFO */
 .viewer{
   font-size:13px;
   color:#ff5252;
+  margin-top:5px;
 }
 
 .countdown{
@@ -111,6 +114,7 @@ h1{
   font-weight:bold;
 }
 
+/* CRICKET CONTENT */
 .features{
   margin-top:10px;
   text-align:left;
@@ -120,7 +124,7 @@ h1{
   margin:5px 0;
 }
 
-/* ENSURE NO SCROLL */
+/* EXTRA SMALL MOBILE – NO SCROLL */
 @media(max-height:700px){
   .features{ display:none; }
 }
@@ -132,33 +136,35 @@ h1{
 <div class="wrapper">
   <div class="container">
 
-    <!-- GIRL IMAGE (LOGO REPLACEMENT) -->
-    <div class="logo"></div>
+    <!-- PROFILE IMAGE -->
+    <div class="profile"></div>
 
     <h1>TANYA QUEEN ANALYST</h1>
-    <div class="subs">30,426 Subscribers</div>
+    <div class="subs">30,426 Cricket Lovers Joined</div>
 
-    <div class="tagline">8 Years Of Experience in Cricket Trading 💯</div>
-    <div class="tagline">IPL 2025 👉 Last 30 Match Back-to-Back Pass</div>
+    <div class="tagline">8+ Years Experience in Cricket Analysis 💯</div>
+    <div class="tagline">IPL 2025 • Match & Toss Insights</div>
 
-    <!-- CTA -->
-    <a class="btn" href="https://t.me/+oOIL4rJnSxExNmM1ye" target="_blank">
+    <!-- TELEGRAM BUTTON (FINAL LINK) -->
+    <a class="btn" href="https://t.me/+oOIL4rJnSxExNmM1" target="_blank">
       JOIN FREE TELEGRAM →
     </a>
 
     <div class="viewer">
-      🔴 <span id="viewers">284</span> People Viewing This Page
+      🔴 <span id="viewers">287</span> People Viewing This Page
     </div>
 
     <div class="countdown">
-      Free Joining Ends In
+      Free Access Ends In
       <div class="timer" id="timer">30</div>
     </div>
 
+    <!-- CRICKET CONTENT -->
     <div class="features">
-      <p>⚡ Cricket Match Analysis</p>
-      <p>✅ Experience Based Insights</p>
-      <p>📊 Trusted by 30K+ Members</p>
+      <p>🏏 Daily Cricket Match Analysis</p>
+      <p>📊 Team Form & Pitch Report</p>
+      <p>⚡ IPL • T20 • ODI Insights</p>
+      <p>✅ Trusted Cricket Research</p>
     </div>
 
   </div>
@@ -174,7 +180,7 @@ setInterval(() => {
   }
 }, 1000);
 
-// Live viewers
+// Live viewers (safe)
 setInterval(() => {
   let min = 260, max = 420;
   document.getElementById("viewers").innerText =
